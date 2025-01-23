@@ -11,8 +11,11 @@ from telethon.sessions import StringSession
 
 class TelegramJobScraper:
     def __init__(self):
+        with open('session_string.session', 'r') as f:
+            session_string = f.read().strip()
 
-        session_string = '1BVtsOIkBu3-LW-lHxCOCc4G3X7Wbqon1pEvtKinkkW-JfHR_aMfeI2QKf-UdXJU3vdAkiPGdD2-n6BFcwcdpOpMh_oe2C1fo3TBMOb2KjSRAmlUBDv_xiE233kBOOf_2RVro9eMJraYAzSckJsEHri_CXNyx_5yZbs7tkSWr50kNy5-POu-LXXruYUv-Jp-tSIiz0NY6SsUy3KDKYXDfKXOjQxvy6DShZElzAk-Fi-S9lg16mhXDZC4cvIj4RxCGQVpeRtoEf_H7H7_AfRAB4sw4ocvqOr-Lde2P834O1zENL4VMCjTV_9xREy0rVWBU1zRSoS7dvl1FiuFHYsjSbe5M8-TTMdU='  # Replace with your generated string
+
+          # Replace with your generated string
         
         # Remove existing session file
         session_file = 'session_name.session'
